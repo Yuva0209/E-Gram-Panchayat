@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Document</title>
+  <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+  <div class="upload-box">
+    <h2>Upload Your Document</h2>
+
+    <form id="uploadForm">
+      <label for="service">Select Service:</label>
+      <select id="service" required>
+        <option value="">-- Choose Service --</option>
+        <option value="Birth Certificate">Birth Certificate</option>
+        <option value="Caste Certificate">Caste Certificate</option>
+        <option value="Income Certificate">Income Certificate</option>
+        <!-- Add more if needed -->
+      </select>
+
+      <label for="file">Choose File:</label>
+      <input type="file" id="file" required>
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <p id="uploadMsg"></p>
+  </div>
+
+  <script src="upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gram Panchayat Portal</title>
+  <link rel="stylesheet" href="home-portal.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏡 Welcome to E Gram Panchayat</h1>
+    <p>Select an option below to continue:</p>
+
+    <div class="button-grid">
+      <button onclick="viewServices()">📋 View Services</button>
+      <button onclick="goToPortal()">📋 Go To Portal</button>
+      <button onclick="viewUploads()">📁 View Uploaded Files</button>
+      <button onclick="updateStatus()">📝 Update Application Status</button>
+      <button onclick="createServices()">📝Create Services</button>
+    </div>
+
+    <div class="content-section" id="content"></div>
+
+    <button onclick="goBack()" class="back-btn">⬅️ Back to Main Home</button>
+  </div>
+
+  <script src="home-portal.js"></script>
+</body>
+</html>

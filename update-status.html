@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Application Status</title>
+  <link rel="stylesheet" href="update-status.css">
+</head>
+<body>
+  <div class="status-box">
+    <h2>Update Application Status</h2>
+    <form id="statusForm">
+      <input type="text" id="appId" placeholder="Application ID" required />
+      <select id="newStatus" required>
+        <option value="">Select Status</option>
+        <option value="Pending">Pending</option>
+        <option value="Approved">Approved</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+      <button type="submit">Update</button>
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+  <script src="update-status.js"></script>
+</body>
+</html>

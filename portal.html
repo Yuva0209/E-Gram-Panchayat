@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gram Panchayat Portal</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Digital E Gram Portal</h1>
+
+    <button onclick="window.location.href='home-portal.html'" class="back-btn">🏠 Back to Home</button>
+
+    <!-- 🔍 Search & View Services -->
+    <section>
+      <h2>🔍 Search Services</h2>
+      <input type="text" id="searchInput" placeholder="Search services...">
+      <ul id="serviceList"></ul>
+    </section>
+
+    <!-- 📝 Update Status -->
+    <section>
+      <h2>📝 Update Application Status</h2>
+      <form id="statusForm">
+        <input type="text" id="appId" placeholder="Application ID" required>
+        <select id="statusValue" required>
+          <option value="">Select Status</option>
+          <option value="Pending">Pending</option>
+          <option value="Approved">Approved</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+        <button type="submit">Update Status</button>
+      </form>
+      <p id="statusMsg"></p>
+    </section>
+
+    <!-- 📤 Upload File -->
+    <section>
+      <h2>📤 Upload Document</h2>
+      <form id="uploadForm">
+        <select id="uploadService" required>
+          <option value="">Select Service</option>
+          <option value="Birth Certificate">Birth Certificate</option>
+          <option value="Caste Certificate">Caste Certificate</option>
+          <option value="Income Certificate">Income Certificate</option>
+        </select>
+        <input type="file" id="uploadFile" required>
+        <button type="submit">Upload File</button>
+      </form>
+      <p id="uploadMsg"></p>
+    </section>
+
+    <!-- 📁 View Uploads -->
+    <section>
+      <h2>📁 View Uploaded Files</h2>
+      <select id="viewService">
+        <option value="">Select Service</option>
+        <option value="Birth Certificate">Birth Certificate</option>
+        <option value="Caste Certificate">Caste Certificate</option>
+        <option value="Income Certificate">Income Certificate</option>
+      </select>
+      <div id="uploadsContainer"></div>
+    </section>
+  </div>
+
+  <script src="portal.js"></script>
+</body>
+</html>
